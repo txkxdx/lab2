@@ -1,0 +1,42 @@
+#include <iostream>
+using namespace std;
+int main() {
+	setlocale(0, "");
+
+	cout << "[+] Введите число: ";
+	int digit;
+	cin >> digit;
+	if (digit <= 10 && digit >= 0) {
+		cout << "\x1b[92m[+]Цифра в диапазоне от 0 до 10";
+	}
+	else if (digit <= 20 && digit >= 11) {
+		cout << "\x1b[93m[+]Цифра в диапазоне от 11 до 20";
+	}
+	else if (digit <= 30 && digit >= 21) {
+		cout << "\x1b[94m[+]Цифра в диапазоне от 21 до 30";
+	}
+	else if (digit <= 40 && digit >= 31) {
+		cout << "\x1b[95m[+]Цифра в диапазоне от 31 до 40";
+	}
+	else if (digit <= 50 && digit >= 41) {
+		cout << "\x1b[96m[+]Цифра в диапазоне от 41 до 50";
+	}
+	else if (digit <= 60 && digit >= 51) {
+		cout << "\x1b[97m[+]Цифра в диапазоне от 51 до 60";
+	}
+	else if (digit <= 70 && digit >= 61) {
+		cout << "\x1b[97m[+]Цифра в диапазоне от 61 до 70";
+	}
+	else if (digit <= 80 && digit >= 71) {
+		cout << "\x1b[97m[+]Цифра в диапазоне от 71 до 80";
+	}
+	else if (digit <= 90 && digit >= 81) {
+		cout << "\x1b[97m[+]Цифра в диапазоне от 81 до 90";
+	}
+	else if (digit <= 100 && digit >= 91) {
+		cout << "\x1b[97m[+]Цифра в диапазоне от 91 до 100";
+	}
+
+	return 0;
+
+}
