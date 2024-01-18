@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+int main() {
+	setlocale(0, "");
+
+	cout << "\x1b[92m[+]Введите число: ";
+	int digit;
+	cin >> digit;
+	int answer;
+	int _;
+
+
+	for (int count = 1; count <= 9; ++count) {
+		cout << "\x1b[92m[+]Решите пример: " << digit << " х " << count << " = ";
+		cin >> answer;
+		if (answer == digit * count) {
+			cout << "Пример решен верно!" << "\n";
+		}
+		else {
+			cout << "Пример решен неверно!" << "\n";
+			break;
+		}
+	}
+	cin >> _;
+	if (answer == digit * 9) {
+		cout << "Примеры решены! байландО байлАндо амигас адьес)";
+	}
+	else
+	return 0;
+	
+	cin >> _;
+}
